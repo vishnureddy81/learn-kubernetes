@@ -1,0 +1,10 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: practice
+  region: us-east-1
+  version: "1.32"
+managedNodeGroups:
+    - name: ng-1
+      desiredCapacity: 1  
+      spot: true
